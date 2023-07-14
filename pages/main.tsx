@@ -1,10 +1,11 @@
+import Header from "@/components/Header";
 import Photo from "@/components/Photo";
 import React from "react";
 
 const MainPage = () => {
   return (
     <>
-      <h1>Main Index</h1>
+      <Header />
       <Photo
         bucketUrl="background"
         width={500}
