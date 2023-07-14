@@ -14,7 +14,7 @@ const Header = () => {
                 </section>
                 <nav className='flex gap-4'>
                     {links.map(link => (
-                        <Button classes={['px-4', 'py-2', 'font-semibold', 'text-gray-500', 'hover:bg-slate-200', 'text-sm', 'hover:rounded-full']}>{link}</Button>
+                        <Button key={link} classes={['px-4', 'py-2', 'font-semibold', 'text-gray-500', 'hover:bg-slate-200', 'text-sm', 'hover:rounded-full']}>{link}</Button>
                     ))}
                 </nav>
                 <section className='flex'>

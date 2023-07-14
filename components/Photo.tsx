@@ -16,7 +16,6 @@ const Photo = ({ bucketUrl, height, width, alt, classes }: PhotoProps) => {
         const urls = await Promise.all(
           images.items.map((image) => getDownloadURL(image))
         );
-        console.log(urls);
         setImageUrl(urls);
       } catch (error) {
         console.error("Error occured in fetching images:", error);
