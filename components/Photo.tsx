@@ -5,7 +5,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { PhotoProps } from "./types/interfaces";
 
-const Photo = ({ bucketUrl, height, width, alt }: PhotoProps) => {
+const Photo = ({ bucketUrl, height, width, alt, classes }: PhotoProps) => {
   const [imageUrl, setImageUrl] = useState<string[]>([]);
 
   useEffect(() => {
@@ -31,6 +31,7 @@ const Photo = ({ bucketUrl, height, width, alt }: PhotoProps) => {
       {imageUrl.map((url) => {
         return (
           <Image
+            className={classes?.join(" ")}
             key={Math.random()}
             alt={alt}
             src={url}

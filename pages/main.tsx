@@ -1,5 +1,7 @@
 import Header from "@/components/Header";
 import Photo from "@/components/Photo";
+import Subscribe from "@/components/Subscribe";
+import Testimonial from "@/components/Testimonial";
 import React from "react";
 
 const MainPage = () => {
@@ -13,6 +15,8 @@ const MainPage = () => {
         isPrority={true}
         alt="banner"
       />
+      <Testimonial />
+      <Subscribe />
     </>
   );
 };
