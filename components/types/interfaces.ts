@@ -8,8 +8,7 @@ export interface PhotoProps {
 
 export interface ButtonProps {
   children: React.ReactNode;
-  icon?: boolean;
-  iconUrl?: string;
+  Icon?: JSX.Element;
   position?: "before" | "after";
   iconName?: string;
   classes: string[];
