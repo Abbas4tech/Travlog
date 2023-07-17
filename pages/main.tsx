@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Introduction from "@/components/Introduction";
 import Services from "@/components/Services";
@@ -14,6 +15,7 @@ const MainPage = () => {
         <Services />
         {/* <Testimonial /> */}
         <Subscribe />
+        <Footer />
       </main>
     </>
   );
