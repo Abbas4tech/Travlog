@@ -11,7 +11,7 @@ const Button = ({
     <div
       role="button"
       className={
-        `${classes.join(" ")} flex items-center gap-2 justify-center ` +
+        `${classes.join(" ")} flex items-center gap-2 ` +
         `${position === "before" ? "" : "flex-row-reverse"}`
       }
     >
