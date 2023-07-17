@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import Photo from "@/components/Photo";
+import Introduction from "@/components/Introduction";
 import Services from "@/components/Services";
 import Subscribe from "@/components/Subscribe";
 import Testimonial from "@/components/Testimonial";
@@ -9,16 +9,12 @@ const MainPage = () => {
   return (
     <>
       <Header />
-      <Photo
-        bucketUrl="background"
-        width={500}
-        height={200}
-        isPrority={true}
-        alt="banner"
-      />
-      <Services />
-      <Testimonial />
-      <Subscribe />
+      <main className="container mx-auto">
+        <Introduction />
+        <Services />
+        <Testimonial />
+        <Subscribe />
+      </main>
     </>
   );
 };

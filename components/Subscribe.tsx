@@ -13,7 +13,7 @@ const Subscribe = () => {
                     Prepare yourself & let’s explore the beauty of the world
                 </div>
                 <div className='flex flex-col md:flex-row mt-4 gap-4 items-center'>
-                    <input type="text" placeholder='Email' className='min-w-[20rem] h-14 py-1 text-sm font-semibold text-opaque-black rounded-lg outline-none px-4 border-yellow-50 border-2' />
+                    <input type="text" placeholder='Email' className='min-w-[20rem] max-w-[90%] h-14 py-1 text-sm font-semibold text-opaque-black rounded-lg outline-none px-4 border-yellow-50 border-2' />
                     <Button classes={["bg-schbang-blue", "rounded-full", "text-sm", "px-6", "py-3", "text-white", "text-center", "hover:scale-110", "ease-in-out", "transition-all", "hover:shadow-md", "hover:shadow-gray-400"]} >Subscribe</Button>
                 </div>
             </article>

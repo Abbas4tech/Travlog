@@ -35,7 +35,6 @@ const Photo = ({ bucketUrl, height, width, alt, classes }: PhotoProps) => {
             alt={alt}
             src={url}
             style={{
-              width: "auto",
               height: "auto",
             }}
             height={height}

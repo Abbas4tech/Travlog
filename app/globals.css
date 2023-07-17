@@ -29,7 +29,7 @@
   .text-opaque-black {
     color: var(--opaque-black);
   }
-  .text-red{
-    color:var(--red)
+  .text-red {
+    color: var(--red);
   }
 }
