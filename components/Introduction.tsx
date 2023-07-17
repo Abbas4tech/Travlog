@@ -9,7 +9,7 @@ const Introduction = () => {
     <>
       <section
         role="grid"
-        className="container mx-auto p-6 md:p-8 grid grid-cols-1 grid-rows-1 md:grid-cols-2 gap-4 md:gap-0"
+        className="md:p-8 grid grid-cols-1 grid-rows-1 md:grid-cols-2 gap-4 md:gap-0"
       >
         <article id="intro-texts" className="py-0 md:py-12">
           <div>

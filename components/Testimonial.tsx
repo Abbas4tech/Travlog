@@ -3,7 +3,7 @@ import Photo from "./Photo";
 
 const Testimonial = () => {
   return (
-    <article className="container mx-auto px-6 my-8 relative">
+    <article className="px-6 my-8 relative">
       <Photo
         bucketUrl="testimonial-extra"
         width={30}
