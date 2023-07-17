@@ -9,7 +9,7 @@ const Testimonial = () => {
         width={30}
         height={75}
         alt="testmonial-showcase"
-        classes={["hidden", "xl:block", "absolute", "left-0", "top-[55%]"]}
+        classes={["hidden", "xl:block", "absolute", "left-0", "top-[22.5%]"]}
       />
       <section className="flex justify-between w-full gap-4 flex-1 flex-wrap content-start">
         <Photo

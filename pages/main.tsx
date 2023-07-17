@@ -1,3 +1,4 @@
+import Carousel from "@/components/Carousel";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Introduction from "@/components/Introduction";
@@ -12,8 +13,9 @@ const MainPage = () => {
       <Header />
       <main className="container max-w-5xl mx-auto p-6 grid gap-4 grid-cols-1 relative">
         <Introduction />
-        <Services />
         <Testimonial />
+        <Carousel />
+        <Services />
         <Subscribe />
         <Footer />
       </main>
