@@ -9,10 +9,10 @@ const MainPage = () => {
   return (
     <>
       <Header />
-      <main className="container mx-auto">
-        <Introduction />
+      <main className="container max-w-5xl mx-auto">
+        {/* <Introduction /> */}
         <Services />
-        <Testimonial />
+        {/* <Testimonial /> */}
         <Subscribe />
       </main>
     </>
