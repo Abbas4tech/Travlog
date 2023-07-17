@@ -8,6 +8,7 @@
   --black: rgba(25, 24, 37, 1);
   --blue: rgba(93, 80, 198, 1);
   --opaque-black: rgba(25, 24, 37, 0.75);
+  --red: rgba(255, 87, 34, 1);
 }
 @layer utilities {
   .bg-off-white {
@@ -26,6 +27,9 @@
     background-color: var(--blue);
   }
   .text-opaque-black {
-    color:var(--opaque-black)
+    color: var(--opaque-black);
+  }
+  .text-red{
+    color:var(--red)
   }
 }

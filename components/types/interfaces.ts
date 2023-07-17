@@ -7,6 +7,11 @@ export interface PhotoProps {
   classes?: string[];
 }
 
+export interface ServicesProps {
+  count: string;
+  servicename: string;
+}
+
 export interface ButtonProps {
   children: React.ReactNode;
   Icon?: JSX.Element;

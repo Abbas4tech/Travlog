@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Photo from "@/components/Photo";
+import Services from "@/components/Services";
 import Subscribe from "@/components/Subscribe";
 import Testimonial from "@/components/Testimonial";
 import React from "react";
@@ -15,6 +16,7 @@ const MainPage = () => {
         isPrority={true}
         alt="banner"
       />
+      <Services />
       <Testimonial />
       <Subscribe />
     </>
