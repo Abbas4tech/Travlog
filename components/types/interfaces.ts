@@ -4,6 +4,7 @@ export interface PhotoProps {
   bucketUrl: string;
   isPrority?: boolean;
   alt: string;
+  autoWidth ?: boolean;
   classes?: string[];
 }
 

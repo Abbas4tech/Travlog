@@ -5,7 +5,14 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { PhotoProps } from "./types/interfaces";
 
-const Photo = ({ bucketUrl, height, width, alt, classes }: PhotoProps) => {
+const Photo = ({
+  bucketUrl,
+  height,
+  width,
+  alt,
+  classes,
+  autoWidth,
+}: PhotoProps) => {
   const [imageUrl, setImageUrl] = useState<string[]>([]);
 
   useEffect(() => {
@@ -25,6 +32,7 @@ const Photo = ({ bucketUrl, height, width, alt, classes }: PhotoProps) => {
     fetchImage();
   }, [bucketUrl]);
 
+  const checkAutoWidth = (): string => (autoWidth ? "auto" : "");
   return (
     <>
       {imageUrl.map((url) => {
@@ -36,6 +44,7 @@ const Photo = ({ bucketUrl, height, width, alt, classes }: PhotoProps) => {
             src={url}
             style={{
               height: "auto",
+              width: checkAutoWidth(),
             }}
             height={height}
             width={width}

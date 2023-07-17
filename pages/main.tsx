@@ -10,10 +10,10 @@ const MainPage = () => {
   return (
     <>
       <Header />
-      <main className="container max-w-5xl mx-auto p-6 grid gap-4 grid-cols-1">
-        {/* <Introduction /> */}
+      <main className="container max-w-5xl mx-auto p-6 grid gap-4 grid-cols-1 relative">
+        <Introduction />
         <Services />
-        {/* <Testimonial /> */}
+        <Testimonial />
         <Subscribe />
         <Footer />
       </main>

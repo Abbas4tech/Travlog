@@ -3,19 +3,20 @@ import Photo from "./Photo";
 
 const Testimonial = () => {
   return (
-    <article className="px-6 my-8 relative">
+    <article className="px-6 my-6">
       <Photo
         bucketUrl="testimonial-extra"
         width={30}
         height={75}
         alt="testmonial-showcase"
-        classes={["hidden", "md:block"]}
+        classes={["hidden", "xl:block", "absolute", "left-0", "top-[55%]"]}
       />
-      <section className="flex justify-between w-[75%] gap-y-4 flex-wrap content-start absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <section className="flex justify-between w-full gap-4 flex-1 flex-wrap content-start">
         <Photo
           bucketUrl="testimonial"
-          width={350}
-          height={175}
+          width={150}
+          height={50}
+          autoWidth={true}
           classes={["cursor-pointer"]}
           alt="testimonials"
         />
