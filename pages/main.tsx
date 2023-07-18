@@ -11,13 +11,15 @@ const MainPage = () => {
   return (
     <>
       <Header />
-      <main className="container max-w-5xl mx-auto p-6 grid gap-4 grid-cols-1 relative">
-        <Introduction />
-        <Testimonial />
-        <Carousel />
-        <Services />
-        <Subscribe />
-        <Footer />
+      <main className="container absolute top-20 z-20 left-1/2 -translate-x-1/2 max-w-5xl mx-auto p-6 grid gap-4 grid-cols-1 ">
+        <section className="relative">
+          <Introduction />
+          <Testimonial />
+          <Carousel />
+          <Services />
+          <Subscribe />
+          <Footer />
+        </section>
       </main>
     </>
   );

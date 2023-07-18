@@ -60,7 +60,11 @@ const Services = () => {
           role="grid"
         >
           {services.map(({ count, servicename }) => (
-            <ServiceCard count={count} servicename={servicename} />
+            <ServiceCard
+              count={count}
+              key={servicename}
+              servicename={servicename}
+            />
           ))}
           <CircularButton
             icon={<Ticket />}

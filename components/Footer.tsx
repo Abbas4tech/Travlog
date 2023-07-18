@@ -24,10 +24,13 @@ const Footer = () => {
             </div>
           </div>
           {footerData.map((item) => (
-            <div className="px-4">
+            <div key={item.menuName} className="px-4">
               <ul className="font-bold">{item.menuName}</ul>
               {item.menuItems.map((item) => (
-                <li className="list-none my-2 text-black/50 cursor-pointer">
+                <li
+                  key={item}
+                  className="list-none my-2 text-black/50 cursor-pointer"
+                >
                   {item}
                 </li>
               ))}

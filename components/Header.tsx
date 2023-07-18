@@ -8,7 +8,7 @@ const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
   return (
     <>
-      <header className="flex justify-between py-4 px-4 lg:px-8">
+      <header className="flex fixed bg-gray-50 top-0 z-50 left-0 w-full justify-between h-20 py-4 px-4 lg:px-8">
         <section className="flex gap-4 items-center">
           <svg
             width="20"
@@ -75,9 +75,9 @@ const Header = () => {
             <div
               id="backdrop"
               onClick={() => setDrawerOpen(false)}
-              className="absolute w-full h-full top-0 left-0 z-30 bg-black/60"
+              className="absolute w-full h-full top-0 left-0 z-20"
             ></div>
-            <section className="absolute bg-white left-0 top-0 h-screen z-40 w-[70%] rounded-r-2xl sliding-door p-4">
+            <section className="absolute bg-white left-0 top-20 h-42 z-40 w-full rounded-r-2xl sliding-door px-4">
               <nav className="">
                 {links.map((link) => (
                   <Button
@@ -97,7 +97,7 @@ const Header = () => {
                   </Button>
                 ))}
               </nav>
-              <section className="flex gap-4 mt-8 justify-center absolute left-0 bottom-4 w-full">
+              <section className="flex gap-4 my-4 w-full">
                 <button className="px-6 py-2 font-semibold text-sm text-sky-950">
                   Login
                 </button>

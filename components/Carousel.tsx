@@ -4,7 +4,7 @@ import Photo from "./Photo";
 const Carousel = () => {
   return (
     <>
-      <section className="w-full h-full grid md:grid-cols-[0.75fr,1.5fr] grid-cols-1 p-4">
+      <section className="w-full grid md:grid-cols-[0.75fr,1.5fr] grid-cols-1 p-4">
         <article className="text-box">
           <p className="text-pink tracking-widest leading-10 font-semibold uppercase">
             Services

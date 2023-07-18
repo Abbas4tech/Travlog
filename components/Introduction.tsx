@@ -13,20 +13,19 @@ const Introduction = () => {
     <>
       <section
         role="grid"
-        className="md:p-8 grid grid-cols-1 grid-rows-1 md:grid-cols-2 gap-4 md:gap-0 my-4"
+        className="md:p-8 grid grid-cols-1 grid-rows-1 md:grid-cols-2 gap-4 md:gap-0 mb-4"
       >
         <article id="intro-texts" className="py-0 md:py-12">
           <div>
             <Button
               classes={[
-                "px-4",
-                "py-2",
+                "p-2",
                 "font-semibold",
                 "text-gray-500",
                 "text-sm",
                 "hover:rounded-full",
                 "hover:bg-gray-50",
-                "w-[11rem]",
+                "w-max",
                 "mb-4",
               ]}
               position="after"
@@ -124,12 +123,23 @@ const Introduction = () => {
               Top Places
             </Button>
             <CircularButton
-              additionalClasses={["absolute", "right-1/4", "bottom-0","md:h-10 md:w-10 w-7 h-7"]}
+              additionalClasses={[
+                "absolute",
+                "right-1/4",
+                "bottom-0",
+                "md:h-10 md:w-10 w-10 h-10",
+              ]}
               icon={<AddPeople />}
               backgroundColor="bg-orange-500"
             />
             <CircularButton
-              additionalClasses={["absolute", "top-[40%]", "md:left-10","md:h-10 md:w-10 w-7 h-7"]}
+              additionalClasses={[
+                "absolute",
+                "top-[40%]",
+                "-left-1",
+                "md:left-10",
+                "md:h-10 md:w-10 w-10 h-10",
+              ]}
               icon={<Message />}
               backgroundColor="bg-pink-500"
             />

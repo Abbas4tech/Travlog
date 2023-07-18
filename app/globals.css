@@ -37,11 +37,11 @@
   }
   @keyframes slide {
     from {
-      transform: translateX(-100%);
+      transform: translateY(-80%);
       opacity: 0;
     }
     to {
-      transform: translateX(0);
+      transform: translateY(0);
       opacity: 1;
     }
   }
@@ -76,8 +76,14 @@ body {
   content: "";
   height: 100%;
   position: absolute;
-  width: 50px;
+  width: 20px;
   z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .slider::before,
+  .slider::after {
+    width: 50px;
+  }
 }
 
 .slide-track {
