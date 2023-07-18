@@ -35,8 +35,9 @@ const Introduction = () => {
             </Button>
           </div>
           <h1 className="text-5xl text--black font-bold">
-            Travel <span className="text-pink">top destination</span> of the
-            world
+            Travel{" "}
+            <span className="text-pink break-words">top destination</span> of
+            the world
           </h1>
           <p className="text-sm text-pink font-semibold my-5">
             we always make our customer happy by providing as many choices as

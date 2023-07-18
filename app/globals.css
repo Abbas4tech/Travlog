@@ -46,10 +46,6 @@
     }
   }
 }
-body {
-  width: 100%;
-  height: 100vh;
-}
 .banner {
   background-image: url("../Icons/banner.jpg");
   background-repeat: no-repeat;
