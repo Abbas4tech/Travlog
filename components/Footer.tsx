@@ -5,7 +5,7 @@ import { footerData, socialIcons } from "./data/data";
 const Footer = () => {
   return (
     <>
-      <footer className="grid gap-4 grid-rows-[1fr,0.9fr]">
+      <footer className="grid gap-4 grid-rows-[1fr,0.1fr]">
         <section className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
           <div className="px-4">
             <div className="mb-6 flex gap-4">

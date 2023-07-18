@@ -9,7 +9,7 @@ const Introduction = () => {
     <>
       <section
         role="grid"
-        className="md:p-8 grid grid-cols-1 grid-rows-1 md:grid-cols-2 gap-4 md:gap-0"
+        className="md:p-8 grid grid-cols-1 grid-rows-1 md:grid-cols-2 gap-4 md:gap-0 my-4"
       >
         <article id="intro-texts" className="py-0 md:py-12">
           <div>
@@ -82,24 +82,20 @@ const Introduction = () => {
             </Button>
           </div>
         </article>
-        <article className="relative w-full h-full">
-          <Photo
-            bucketUrl="background"
-            width={1000}
-            height={500}
-            classes={[
-              "absolute",
-              "left-1/2",
-              "top-0",
-              "z-10",
-              "-translate-x-1/2",
-            ]}
-            isPrority={true}
-            alt="banner"
-          />
-          <article className="absolute z-20 left-1/2 top-12 -translate-x-1/2 grid gap-4 grid-cols-2">
+        <article className="relative w-full h-full banner p-4 flex justify-center items-center">
+          <article className="w-[80%] h-[80%] grid gap-6 grid-cols-2 self">
             <Photo
               bucketUrl="intro-cards"
+              classes={[
+                "hover:scale-105",
+                "brightness-75",
+                "hover:brightness-100",
+                "ease-in-out",
+                "transition-all",
+                "cursor-pointer",
+                "[&:nth-child(2)]:row-span-2",
+                "[&:nth-child(2)]:self-center",
+              ]}
               width={400}
               height={400}
               alt="intro-images"
