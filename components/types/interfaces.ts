@@ -4,10 +4,15 @@ export interface PhotoProps {
   bucketUrl: string;
   isPrority?: boolean;
   alt: string;
-  autoWidth ?: boolean;
+  autoWidth?: boolean;
   classes?: string[];
 }
 
+export interface CircularButtonProps {
+  icon: JSX.Element;
+  backgroundColor: string;
+  additionalClasses: string[];
+}
 export interface ServicesProps {
   count: string;
   servicename: string;

@@ -3,6 +3,10 @@ import Button from "./Button";
 import BagIcon from "@/Icons/bag";
 import PlayIcon from "@/Icons/PlayIcon";
 import Photo from "./Photo";
+import Location from "@/Icons/Location";
+import CircularButton from "./CircularButton";
+import AddPeople from "@/Icons/AddPeople";
+import Message from "@/Icons/Message";
 
 const Introduction = () => {
   return (
@@ -83,7 +87,7 @@ const Introduction = () => {
           </div>
         </article>
         <article className="relative w-full h-full banner p-4 flex justify-center items-center">
-          <article className="w-[80%] h-[80%] grid gap-6 grid-cols-2 self">
+          <article className="md:w-[80%] w-full h-full grid gap-6 grid-cols-2 self">
             <Photo
               bucketUrl="intro-cards"
               classes={[
@@ -99,6 +103,35 @@ const Introduction = () => {
               width={400}
               height={400}
               alt="intro-images"
+            />
+            <Button
+              Icon={<Location />}
+              classes={[
+                "px-4",
+                "py-2",
+                "bg-white",
+                "rounded-full",
+                "border-2",
+                "border-gray-200",
+                "absolute",
+                "right-0",
+                "top-1/2",
+                "text-sm",
+                "font-semibold",
+              ]}
+              position="before"
+            >
+              Top Places
+            </Button>
+            <CircularButton
+              additionalClasses={["absolute", "right-1/4", "bottom-0","md:h-10 md:w-10 w-7 h-7"]}
+              icon={<AddPeople />}
+              backgroundColor="bg-orange-500"
+            />
+            <CircularButton
+              additionalClasses={["absolute", "top-[40%]", "md:left-10","md:h-10 md:w-10 w-7 h-7"]}
+              icon={<Message />}
+              backgroundColor="bg-pink-500"
             />
           </article>
         </article>

@@ -4,6 +4,8 @@ import { services } from "./data/data";
 import Photo from "./Photo";
 import Button from "./Button";
 import Discount from "../Icons/Discount";
+import CircularButton from "./CircularButton";
+import Ticket from "@/Icons/Ticket";
 
 const Services = () => {
   return (
@@ -54,15 +56,27 @@ const Services = () => {
           has roots in a piece of classical Latin literature from 45 BC.
         </p>
         <section
-          className="grid grid-cols-1 grid-rows-1 sm:grid-cols-2 sm:grid-rows-2 gap-4"
+          className="grid grid-cols-1 relative grid-rows-1 sm:grid-cols-2 sm:grid-rows-2 gap-4"
           role="grid"
         >
           {services.map(({ count, servicename }) => (
             <ServiceCard count={count} servicename={servicename} />
           ))}
+          <CircularButton
+            icon={<Ticket />}
+            backgroundColor="bg-yellow-500"
+            additionalClasses={[
+              "absolute",
+              "md:-top-10",
+              "md:-right-10",
+              "-right-4",
+              "-top-4",
+              "md:h-16 md:w-16 w-10 h-10",
+            ]}
+          />
         </section>
       </div>
-    </section>  
+    </section>
   );
 };
 
